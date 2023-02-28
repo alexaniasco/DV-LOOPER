@@ -1,0 +1,34 @@
+.tarjeta{
+    display: flex;
+    background-color: rgb(226, 226, 226);
+    flex-direction: column;
+align-items: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: 1s;
+ 
+   
+}
+
+
+.imagen_tarjeta{
+    height: 100%;
+    max-width: 150px !important;
+    
+
+}
+
+.texto_tarjeta{
+    margin: 0;
+  height: 90%;
+   
+}
+
+.texto_tarjeta p{
+    display: contents;
+}
+
+.imagen_cont{
+    max-width: 150px !important;
+    object-fit: cover;
+}
