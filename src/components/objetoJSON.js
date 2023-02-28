@@ -1,4 +1,4 @@
-const methodss = [
+const JSONN = [
     {
       name: "filter",
       description: "Crea un nuevo array con todos los elementos que pasan la prueba implementada por la función dada.",
@@ -171,3 +171,5 @@ const methodss = [
           `
         },]
     }]
+
+    export default JSONN;

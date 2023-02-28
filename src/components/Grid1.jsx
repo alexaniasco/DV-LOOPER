@@ -1,3 +1,4 @@
+import JSONN from "./objetoJSON";
 import React from "react";
 import "../App.css";
 import { Tarjeta } from "./Tarjeta";
@@ -5,6 +6,8 @@ import { TarjetaTech } from "./TarjetaTech";
 import { useRef, useEffect, useState } from "react";
 const audio = require("./BEAT_NUEVO.mp3");
 const img = require("./pngegg.png");
+
+
 export const Grid1 = () => {
   const miDivRef = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -70,15 +73,10 @@ export const Grid1 = () => {
             onKeyDown={handleKeyDown}
             tabIndex="0"
           >
-            <Tarjeta
-              tabIndex="0"
-              nombre="Javascript nivel 1"
-              descripcion="nuevo curso de javascript"
-            ></Tarjeta>
-            <Tarjeta
-              nombre="Javascript nivel 2"
-              descripcion="nuevo curso de javascript"
-            ></Tarjeta>
+          { JSONN && JSONN.map(e => <Tarjeta
+          nombre={e.name}
+          
+          ></Tarjeta>)}
             <Tarjeta
               nombre="Javascript nivel 3"
               descripcion="nuevo curso de javascript"
