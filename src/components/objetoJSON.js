@@ -1,4 +1,6 @@
-const methods = [
+
+const JSONN = [
+
     {
       name: "filter",
       description: "Crea un nuevo array con todos los elementos que pasan la prueba implementada por la función dada.",
@@ -170,4 +172,8 @@ const methods = [
             const hasExpensiveProduct = products.some(product => product.price >= 50);
           `
         },]
+
     }]
+
+    export default JSONN;
+
