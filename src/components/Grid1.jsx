@@ -3,8 +3,8 @@ import "../App.css";
 import { Tarjeta } from "./Tarjeta";
 import { TarjetaTech } from "./TarjetaTech";
 import { useRef, useEffect, useState } from "react";
-const audio = require("./BEAT_NUEVO.mp3")
-const img = require("./pngegg.png")
+const audio = require("./BEAT_NUEVO.mp3");
+const img = require("./pngegg.png");
 export const Grid1 = () => {
   const miDivRef = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(-1);
@@ -61,14 +61,9 @@ export const Grid1 = () => {
 
   return (
     <div className="grid_con">
-        
-      <h1 style={{color:"white"}}>Home</h1>
+      <h1 style={{ color: "white" }}>Home</h1>
       <div className="grid">
         <div className="grid_1">
-        
-      
-       
-
           <div
             className="grid_content_1"
             ref={miDivRef}
@@ -113,7 +108,7 @@ export const Grid1 = () => {
               descripcion="metodo para filtrar"
             ></Tarjeta>
             <Tarjeta
-              nombre="Javascript nivel 3"
+              nombre="Javascript nivel 5"
               descripcion="nuevo curso de javascript"
             ></Tarjeta>
             <Tarjeta
@@ -148,7 +143,6 @@ export const Grid1 = () => {
           </div>
         </div>
       </div>
-     
     </div>
   );
 };
